@@ -1,3 +1,450 @@
+.clearfix:before,.clearfix:after{
+  display:table;
+  content:"";
+}
+.clearfix:after{
+  clear:both;
+}
+.clearfix{
+  *zoom:1;/*兼容ie浏览器*/
+}
+#bai_body{
+  background-color: #212121;
+}
 #m-aboutUs{
+  width: 1519px;
+  position: relative;
+  left: 50%;
+  margin-left: -759px;
+  #m-aboutUs-banner{
+    height: 267px;
+    background: url("../img/aboutUs/banner_fixed.jpg") no-repeat;
+    position: relative;
+    #m-aboutUs-banner-fixed{
+      height: 267px;
+      position: fixed;
+      width: 1519px;
+      img{
+        width: 137px;
+        height:50px;
+        margin-left: 48px;
+        margin-top: 19px;
+        float: left;
+      }
+      .banner_line{
+        height: 1px;
+        background-color: #262626;
+        top: 80px;
+      }
+      .nav{
+        overflow: hidden;
+        margin-left: 595px;
+        margin-top: 0px;
+        width: 650px;
+        height: 80px;
+        z-index: 9;
+        float: left;
+        li:hover{
+          border-bottom: #ffffff 1px solid;
+        }
+        li {
+          height: 80px;
+          font-size: 15px;
+          float: left;
+          line-height: 80px;
+          width: 85px;
+          margin-left: 28px;
+          text-align: center;
+          li:nth-child(1){
+            margin-left: 0;
+          }
+          a{
+            display: inline-block;
+            padding: 0 0 14px 0;
+            color: #e6e6e6;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  #m-aboutUs-main{
+    .con_top{
+      padding-bottom: 56px;
+      .top_left{
+        float: left;
+        img{
+          margin-top: 100px;
+          margin-left: 403px;
+          width: 180px;
+          height:65px;
+        }
+        p{
+          margin-left: 248px;
+          margin-top: 46px;
+          width: 485px;
+          height: 115px;
+          line-height: 26px;
+          text-align: center;
+          color: #808080;
+          font-size: 12px;
+        }
+      }
+      .m-aboutUs-top_right{
+        float: right;
+        div{
+          margin-top: 88px;
+          margin-right: 247px;
+          overflow: hidden;
+          width: 493px;
+          height: 290px;
+        }
+      }
+    }
+    .con_middle{
+      padding-top: 103px;
+      padding-bottom: 87px;
+      border-top: #282828 1px solid;
+      border-bottom: #282828 1px solid;
+      h1{
+        padding-left: 708px;
+        color: #ffffff;
+        font-size: 26px;
+      }
+      p{
 
+        margin-top: 10px;
+        margin-left: 448px;
+        text-align: center;
+        line-height: 27px;
+        color: #808080;
+        font-size: 15px;
+        width: 600px;
+        height: 113px;
+      }
+      #time{
+        width: 984px;
+        padding-top: 81px;
+        margin-left: 269px;
+        #m-aboutUs-since{
+          width: 190px;
+          float: left;
+          div{
+            line-height: 90px;
+            font-size: 40px;
+            color: #b3b3b3;
+            span{
+              display: inline-block;
+              font-size: 40px;
+              color: #b3b3b3;
+              margin: 0;
+              padding: 0;
+            }
+          }
+          span{
+            padding-left: 70px;
+            text-align: center;
+            font-size: 12px;
+            color: #666666;
+
+          }
+
+        }
+        #m-aboutUs-since {
+          width: 190px;
+          float: left;
+          div {
+            line-height: 90px;
+            font-size: 40px;
+            color: #b3b3b3;
+          }
+          span {
+            padding-left: 70px;
+            text-align: center;
+            font-size: 12px;
+            color: #666666;
+
+          }
+        }
+
+        #m-aboutUs-coffee{
+
+          width: 190px;
+          float: left;
+          margin-left: 217px;
+          div {
+            line-height: 90px;
+            font-size: 40px;
+            color: #b3b3b3;
+          }
+          span {
+            padding-left: 58px;
+            text-align: center;
+            font-size: 12px;
+            color: #666666;
+
+          }
+        }
+
+        #m-aboutUs-products{
+
+          width: 190px;
+          float: right;
+          div {
+            line-height: 90px;
+            font-size: 40px;
+            color: #b3b3b3;
+          }
+          span {
+            padding-left: 10px;
+            text-align: center;
+            font-size: 12px;
+            color: #666666;
+
+          }
+        }
+      }
+    }
+    #con_bottom{
+      padding: 96px 186px 260px 184px;
+      .m-aboutUs-bot_left{
+        float: left;
+        margin-right: 52px;
+        p{
+          width: 349px;
+          font-size: 12px;
+          color: #696969;
+          line-height: 26px;
+        }
+        div{
+          background-color: #ffffff;
+          width: 300px;
+          height: 302px;
+          margin-left: 25px;
+          margin-bottom:8px;
+          img{
+            width:300px;
+            height:302px;
+          }
+        }
+
+      }
+
+      .m-aboutUs-bot_middle{
+        float: left;
+        p{
+          width: 349px;
+          font-size: 12px;
+          color: #696969;
+          line-height: 26px;
+        }
+        div{
+          background-color: #ffffff;
+          width: 300px;
+          height: 302px;
+          margin-left: 25px;
+          margin-bottom:8px;
+          img{
+            width:300px;
+            height:302px;
+          }
+        }
+      }
+
+      .m-aboutUs-bot_right{
+
+        float: right;
+        p{
+          width: 349px;
+          font-size: 12px;
+          color: #696969;
+          line-height: 26px;
+        }
+        div{
+          background-color: #ffffff;
+          width: 300px;
+          height: 302px;
+          margin-left: 25px;
+          margin-bottom:8px;
+          img{
+            width:300px;
+            height:302px;
+          }
+        }
+      }
+    }
+  }
+  #m-aboutUs-footer{
+    #footer_top {
+      padding: 0 272px 0 124px;
+      border-bottom: #262626 1px solid;
+      #contact {
+        float: left;
+        width: 324px;
+        p {
+          font-size: 12px;
+          color: #d3d3d3;
+          line-height: 24px;
+
+        }
+        p:nth-child(2) {
+          background: url("../img/aboutUs/phone.png") no-repeat 0 center;
+          padding-left: 18px;
+        }
+        p:nth-child(3) {
+          background: url("../img/aboutUs/email.png") no-repeat 0 center;
+          padding-left: 20px;
+        }
+        p:nth-child(4) {
+          background: url("../img/aboutUs/address.png") no-repeat 0 center;
+          padding-left: 13px;
+        }
+
+        #m-aboutUs-contact_pic {
+          margin-top: 31px;
+          position: relative;
+
+          a:nth-child(2) {
+            margin-right: 15px;
+            margin-left: 13px;
+          }
+          a:nth-child(3) {
+            margin-right: 18px;
+          }
+
+          a{
+            img{
+              cursor: pointer;
+            }
+          }
+          #m-aboutUs-qq-code{
+            position: absolute;
+            right: -20px;
+            top: -80px;
+            display: none;
+            width:200px;
+            height:200px;
+          }
+          #m-aboutUs-wechat-code{
+            position: absolute;
+            right: -20px;
+            top: -80px;
+            display: none;
+            width:200px;
+            height:200px;
+          }
+          #m-aboutUs-fac-code{
+            position: absolute;
+            right: -20px;
+            top: -80px;
+            display: none;
+            width:200px;
+            height:200px;
+          }
+          #m-aboutUs-ins-code{
+            position: absolute;
+            right: -20px;
+            top: -80px;
+            display: none;
+            width:200px;
+            height:200px;
+          }
+
+        }
+
+      }
+      #register {
+        float: left;
+        width: 418px;
+        margin-left: 105px;
+        margin-right: 150px;
+
+        #m-aboutUs-name {
+
+          padding-bottom: 38px;
+          font-size: 15px;
+          color: #ededed;
+          background: url("../img/aboutUs/bg_message.png") no-repeat 33px 8px;
+          display: inline-block;
+          input {
+            margin-left: 10px;
+            background-color: #212121;
+            cursor: pointer;
+            color: #ededed;
+            width: 100px;
+          }
+        }
+
+        #m-aboutUs-phonenum {
+
+          font-size: 15px;
+          color: #ededed;
+          background: url("../img/aboutUs/bg_message.png") no-repeat 33px 8px;
+          display: inline-block;
+          padding-bottom: 38px;
+          input {
+            margin-left: 10px;
+            background-color: #212121;
+            cursor: pointer;
+            color: #ededed;
+            width: 150px;
+          }
+        }
+
+        #m-aboutUs-help {
+          font-size: 15px;
+          color: #ededed;
+          background: url("../img/aboutUs/bg_message.png") no-repeat 150px 8px;
+          display: inline-block;
+          padding-bottom: 23px;
+          textarea{
+            background-color: #212121;
+            height: 20px;
+            cursor: pointer;
+            color: #ededed;
+            width: 417px;
+            border-bottom: #bbbbbb 1px solid;
+            margin-top: 50px;
+          }
+        }
+
+        #m-aboutUs-btn {
+
+          width: 70px;
+          height: 27px;
+          background-color: #eeeeee;
+          font-size: 14px;
+          color: #000000;
+        }
+        #m-aboutUs-pic {
+          float: right;
+          img{
+            width:122px;
+            height:220px;
+          }
+        }
+      }
+    }
+    #footer_bottom {
+      position: relative;
+      #copy{
+        height: 51px;
+        padding-top: 13px;
+        font-size: 11px;
+        color: #aaaaaa;
+        text-align: center;
+        a {
+          color: #aaaaaa;
+        }
+      }
+      #m-aboutUs-return_top{
+        position: absolute;
+        left: 1480px;
+        top: 4px;
+        cursor: pointer;
+        width:12px;
+        height:8px;
+      }
+    }
+  }
 }
