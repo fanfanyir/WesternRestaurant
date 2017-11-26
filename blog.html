@@ -4,13 +4,118 @@
     <meta charset="UTF-8">
     <title>博客</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="scss/module/m-blog.scss">
+    <link rel="stylesheet" href="css/awesome/css/font-awesome.min.css" type="text/css"/>
 </head>
 <body>
 <div id="m-blog">
+    <div id="blog-main">
+        <div id="blog-header">
+            <img src="img/blog/loge.png" width="138" height="50" id="loge">
+            <ul id="nav" class="clearfix">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="latestMenu.html">最新菜单</a></li>
+                <li><a href="foodEnjoy.html">菜品欣赏</a></li>
+                <li><a href="aboutUs.html">关于我们</a></li>
+                <li><a href="contactUs.html">联系我们</a></li>
+                <li><a href="onlineBooking.html">在线订座</a></li>
+                <div id="list"></div>
+            </ul>
+            <p id="comment">博客/松露，上帝才知道的芬芳</p>
+        </div>
+        <div id="blog-content">
+        </div>
+            <script id="contents" type="text/html">
+                <div id="content-left">
+                    {{each leftTop as value index}}
+                    <h1>{{value.h1}}</h1>
+                    <p class="note">
+                        <span class="time">{{value.time}}</span>
+                        <span>{{value.number}}</span>
+                    </p>
+                    <div id="banner">
+                        <img src="{{value.impath}}" width="790" height="705" title="{{value.title}}">
+                    </div>
+                    <div id="text1">
+                        <p>{{value.p1}}</p>
+                        {{/each}}
+                        {{each leftCenter as value index}}
+                        <h2>{{value.h2}}</h2>
+                        <p>{{value.p2}}</p>
+                            {{/each}}
 
+                    </div>
+                    {{each leftBottomp as value index}}
+                    <p>{{value.p3}}</p>
+                    {{/each}}
+                    <div id="imgs">
+                        <ul id="show" class="clearfix">
+                            {{each leftBottom as value index}}
+                            <li><img src="{{value.impath}}" width="186" height="186" title="{{value.title}}"></li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+                <div id="content-right">
+                    <h1>给大家分享你的想法</h1>
+                    <ul id="message">
+                        {{each rightMessage as value index}}
+                        <li>
+                            <h2>{{value.h2}}</h2>
+                            <p class="ids">{{value.ids1}}</p>
+                            <p class="ids">{{value.ids2}}</p>
+                            <p class="text2">{{value.text2}}</p>
+                            <p class="icon">
+                                <span class="icon1"><i class="fa fa-thumbs-up"></i>赞(<span class="number1">0</span>)</span>
+                                <span class="icon2"><i class="fa fa-comments"></i>回复(<span class="number2">5</span>)</span>
+                            </p>
+                        </li>
+                        {{/each}}
+                    </ul>
+                    <div id="discuss">
+                        <p id="more">更多以往评论<i class="fa fa-ellipsis-h"></i></p>
+                        <p>你的评论<i class="fa fa-commenting"></i></p>
+                        <input type="text" placeholder="请填写主题" id="theme">
+                        <textarea placeholder="内容" id="details"></textarea>
+                        <p id="put">
+                            <i class="fa fa-smile-o"></i>
+                            <i class="fa fa-image"></i>
+                            <input type="button" value="提交" id>
+                        </p>
+                    </div>
+                </div>
+            </script>
+        <div id="blog-footer">
+            <div id="split"></div>
+            <div id="f-content">
+                <p id="f-c-1">
+                    我们期待你的光临或垂询，你可以通过以下方式联系我们<br>
+                    <i class="fa fa-phone"></i>0512-88667546<br>
+                    <i class="fa fa-envelope"></i>lezzatos@163.com<br>
+                    <i class="fa fa-location-arrow"></i>汉东省京州市光明区<br><br>
+                    <i class="fa fa-facebook awesome"></i>
+                    <i class="fa fa-qq awesome"></i>
+                    <i class="fa fa-linkedin awesome"></i>
+                    <i class="fa fa-weixin awesome"></i>
+                </p>
+                <div id="f-c-2">
+                    <p class="hint">姓名<span>*</span></p>
+                    <input type="text" class="text3" id="names">
+                    <p class="hint">电话<span>*</span></p>
+                    <input type="text" class="text3" id="phone">
+                    <p>我们有什么可以效劳？<span>*</span></p>
+                    <input type="text" class="text3"><br>
+                    <input type="button" value="提交" id="give">
+                </div>
+            </div>
+            <i  class="fa fa-chevron-circle-up" id="hide"></i>
+            <p id="copyright">Copyright 5015-2020 @ 阿米尔顿西餐 icp备案号：中0089234123-3</p>
+        </div>
+    </div>
 </div>
-</body>
 <script src="js/lib/template-web.js"></script>
 <script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/velocity.min.js"></script>
 <script src="js/module/blog.js"></script>
+</body>
 </html>
