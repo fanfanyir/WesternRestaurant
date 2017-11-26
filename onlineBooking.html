@@ -8,8 +8,86 @@
 </head>
 <body>
 <div id="m-onlineBooking">
+    <div id="onlineBooking-main">
+        <div id="onlineBooking-header">
+            <!--<img src="img/blog/loge.png" width="138" height="50" id="loge">
+            <ul id="nav" class="clearfix">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="latestMenu.html">最新菜单</a></li>
+                <li><a href="foodEnjoy.html">菜品欣赏</a></li>
+                <li><a href="aboutUs.html">关于我们</a></li>
+                <li><a href="contactUs.html">联系我们</a></li>
+                <li><a href="onlineBooking.html">在线订座</a></li>
+                <div id="list"></div>
+            </ul>-->
+        </div>
+        <script id="content" type="text/html">
+            {{each loge as value}}
+            <img src="{{value.loge_impath}}" width="138" height="50" id="loge" title="{{value.loge_title}}">
+            {{/each}}
+            <ul id="nav" class="clearfix">
+                {{each nav as value}}
+                <li><a href="{{value.nav_href}}">{{value.nav_li}}</a></li>
+                {{/each}}
+                <div id="list"></div>
+            </ul>
+        </script>
+        <div id="onlineBooking-content">
+            <img src="img/onlineBooking/loge-big.jpg" height="65" width="181">
+            <p id="slogan">通过网上订餐，不仅可以节约大量人力成本，还可以提高餐厅的网络形象。</p>
+            <p id="English">By ordering food online, it can save a lot of labor costs and improve the restaurant's online image.</p>
+            <form>
+                <p class="title">姓名</p>
+                <input>
+                <p class="title">电话</p>
+                <input>
+                <p class="title">人数</p>
+                <select>
+                    <option>小桌四人</option>
+                    <option>中桌六人</option>
+                    <option>大桌八人</option>
+                </select>
+                <p class="title">预定日期</p>
+                <select>
+                    <option>年</option>
+                </select>
+                <select>
+                    <option>月</option>
+                </select>
+                <select>
+                    <option>日</option>
+                </select>
+                <p class="title">预定时间</p>
+                <select>
+                    <option>12</option>
+                </select>
+                <select>
+                    <option>00</option>
+                </select>
+                <select>
+                    <option>上午</option>
+                </select>
+                <input type="button" value="确认提交" id="put">
+            </form>
+        </div>
 
+        <div id="onlineBooking-footer">
+            <p id="copyright">Copyright 5015-2020 @ 阿米尔顿西餐 icp备案号：中0089234123-3</p>
+        </div>
+    </div>
 </div>
+<!--<script>
+
+    var data = {
+        isAdmin: true,
+        slogan:"通过网上订餐，不仅可以节约大量人力成本，还可以提高餐厅的网络形象。",
+        English:"By ordering food online, it can save a lot of labor costs and improve the restaurant's online image.",
+        impath:"img/onlineBooking/loge-big.jpg"
+    }
+    var html1 = template('content', data);
+    $('#div1').html(html1);
+
+</script>-->
 </body>
 <script src="js/lib/template-web.js"></script>
 <script src="js/lib/jquery.min.js"></script>
