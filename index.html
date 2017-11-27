@@ -8,10 +8,305 @@
 </head>
 <body>
 <div id="m-index">
+    <div id="main">
+        <div id="scolltop">点我回到顶部</div>
+        <div id="top">
+            <img src="img/index/logo.png" id="top_logo">
+            <ul id="top_nav">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="latestMenu.html">最新菜单</a></li>
+                <li><a href="foodEnjoy.html">菜品欣赏</a></li>
+                <li><a href="aboutUs.html">关于我们</a></li>
+                <li><a href="contactUs.html">联系我们</a></li>
+                <li><a href="onlineBooking.html">在线订座</a></li>
+            </ul>
+        </div>
+        <div id="banner">
+            <input type="button" value="<"/>
+            <input type="button" value=">"/>
+            <ul id="nav">
+                <li   class="nav_li"><img src="img/index/banner4.jpg" width="1536" height="654" /></li>
+                <li  class="nav_li"><img src="img/index/banner2.jpg" width="1536" height="654"/></li>
+                <li  class="nav_li"><img src="img/index/banner3.jpg" width="1536" height="654"/></li>
+                <li  class="nav_li"><img src="img/index/banner.jpg" width="1536" height="654"/></li>
+            </ul>
+        </div>
+        <div id="Food" class="clearfix">
+            <div id="Food_top" class="clerafix">
+                <span class="Food_top_left"><span>菜品</span></span>
+                <span class="Food_top_mid">Food</span>
+                <span class="Food_top_right"><a href="foodDetail.html">更多 ></a></span>
+            </div>
+            <div id="Food_content" class="clearfix">
+                <!--<div>-->
+                <!--<img src="img/index/菜品一.jpg" width="332" height="220" class="Food_content_img">-->
+                <!--<p>精选澳洲谷伺肉眼</p>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<img src="img/index/菜品二.jpg" width="332" height="220" class="Food_content_img">-->
+                <!--<p>T骨牛排</p>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<img src="img/index/菜品三.jpg" width="332" height="220"class="Food_content_img">-->
+                <!--<p>红酒烤牛排配时令蔬菜及烤蒜汁</p>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<img src="img/index/菜品四.jpg" width="332" height="220"class="Food_content_img">-->
+                <!--<p>德克萨斯烟熏炭烤肋排</p>-->
+                <!--</div>-->
 
-</div>
+                <!--<div>-->
+                <!--<img src="img/index/菜品五.jpg" width="332" height="220"class="Food_content_img">-->
+                <!--<p>精选澳洲谷伺肉眼</p>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<img src="img/index/菜品六.jpg" width="332" height="220" class="Food_content_img">-->
+                <!--<p>T骨牛排</p>-->
+                <!--</div>-->
+
+                <!--<div>-->
+                <!--<img src="img/index/菜品七.jpg" width="332" height="220" class="Food_content_img">-->
+                <!--<p>红酒烤牛排配以时令蔬菜及烤蒜汁</p>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<img src="img/index/菜品八.jpg" width="332" height="220"class="Food_content_img">-->
+                <!--<p>得克萨斯烟熏烤猪肋排</p>-->
+
+                <!--</div>-->
+                <script type="text/html" id="Food_content_c">
+                    {{each Food_content_m as value index}}
+                    <div class="Food_content_i">
+                        <img src="{{value.imgPath}}" title="{{value.title}}">
+                        <div class="Food_content_p">{{value.title}}</div>
+                        <div>{{value.title}}</div>
+
+                    </div>
+                    {{/each}}
+                </script>
+            </div>
+        </div><!--Food-->
+        <div id="linian" class="clerafix">
+            <div id="linian_left">
+                <!--<img src="img/index/锅.png" id="linian_left_img">-->
+                <!--<div id="linian_left_div1">西餐服务理念</div>-->
+                <!--<div id="linian_left_div2">这是一点东西这是一点东西这是一点东西这是一点东西这是一点东西这是一点东西这是一点东西这是一点东西</div>-->
+            </div>
+            <script type="text/html" id="linian_left_c">
+                {{each linian_m as value index}}
+                <img src="{{value.imgPath}}"id="linian_left_img">
+                <div id="linian_left_div1">{{value.tite}}</div>
+                <div id="linian_left_div2">{{value.p}}</div>
+                {{/each}}
+            </script>
+            <div id="linian_content" >
+                <!--<img src="img/index/切刀.png" id="linian_content_img" width="187" height="163">-->
+                <!--<div id="linian_content_div1">西餐服务理念</div>-->
+                <!--<div id="linian_content_div2">这是一点东西这是一点东西这是一点东西这是一点东西这是一点东西这是一点东西这是一点东西</div>-->
+            </div>
+            <script type="text/html" id="linian_content_c">
+                {{each linian_a as value index}}
+                <img src="{{value.imgPath}}"id="linian_content_img">
+                <div id="linian_content_div1">{{value.tite}}</div>
+                <div id="linian_content_div2">{{value.pT}}</div>
+                {{/each}}
+            </script>
+            <div id="linian_right">
+                <!--<img src="img/index/厨师1.png" id="linian_right_img" width="187" height="163">-->
+                <!--<div id="linian_right_div1">西餐服务理念</div>-->
+                <!--<div id="linian_right_div2">这是一点东西这是一点东西这是一点东西这是一点东西这是一点东西这是一点东西这是一点东西</div>-->
+            </div>
+            <script type="text/html" id="linian_right_c">
+                {{each linian_b as value index}}
+                <img src="{{value.imgPath}}"id="linian_right_img">
+                <div id="linian_right_div1">{{value.tite}}</div>
+                <div id="linian_right_div2">{{value.p}}</div>
+                {{/each}}
+            </script>
+        </div>
+        <div id="aboutUs" class="clerafix">
+            <img src="img/index/关于本店.jpg" id="aboutus_left" width="769" height="734" title="你是最棒的">
+            <div id="aboutus_right" class="clearfix">
+                <span id="aboutus_right_top">关于本店</span>
+                <p id="aboutus_right_mid">About Us</p>
+                <p id="aboutus_right_bottom">这里是一些关于我们店里的介绍；这里是一些关于我们店里的介绍；这里是一些关于我们店里的介绍；这里是一些关于我们店里的介绍；这里是一些关于我们店里的介绍；这里是一些关于我们店里的介绍；这里是一些关于我们店里的介绍</p>
+                <div id="aboutus_right_footer"><a href="#"><a href="aboutUs.html">>  more</a> </a></div>
+            </div>
+        </div><!--aboutUs-->
+        <div id="Blog">
+            <img src="img/index/博客_left.jpg" id="Blog_left" width="40" height="40">
+            <img src="img/index/博客_right.jpg" id="Blog_right" width="40" height="40">
+            <div id="Blog_topter">
+                    <span id="Blog_top"><a href="blog.html">博客</a></span>
+                    <p id="Blog_banner"> Blog</p >
+            </div>
+            <div id="Blog_content_box">
+                <!--<div class="Blog_content clerafix">-->
+                <!--    <img src="img/index/博客图.jpg" class="Blog_content_img" width="220" height="241">-->
+                <!--    <p class="Blog_content_p">-->
+                <!--文章简短的摘要，一般都是短小精悍的一百多字，让人快速理解文章意思，-->
+                <!--            文章简短的摘要，一般都是短小精悍的一百多字，让人快速理解文章意思-->
+                <!--            文章简短的摘要，一般都是短小精悍的一百多字，让人快速理解文章意思-->
+                <!--</p>-->
+                <!--<p class="Blog_footer"> 松露,上帝才知道的芬芳,舌尖上的诱惑。</p >-->
+                <!--</div>-->
+                <!--<div class="Blog_content clerafix">-->
+                <!--<img src="img/index/博客图.jpg" class="Blog_content_img" width="220" height="241">-->
+                <!--<p class="Blog_content_p">-->
+                <!--输入空格就了思考如果你开心的如果你就日给你发看到的防护功能啦无法抗拒的你-->
+                <!--第六感好了打给客服分级考试了买奶粉的胜利手里的吗到哪里上课，想法瑟夫开始的-->
+                <!--饿了人口，想法vna；塑料袋vmk，-->
+                <!--</p>-->
+                <!--<p class="Blog_footer">一般都是短小精悍的一百多字，让人快速理解文章意思</p >-->
+                <!--</div> -->
+                <!--<div class="Blog_content clerafix">-->
+                <!--<img src="img/index/博客图.jpg" class="Blog_content_img" width="220" height="241">-->
+                <!--<p class="Blog_content_p">-->
+                <!--东西个人看法色轮塔吉克；啊我日了附近开了客服给你这是快递发货，纸飞机欸写，的富家女-->
+                <!--鸡肉味考虑是否从vjnkaiwfj，拉我课时费vcmj苦涩我就上电脑课让他字符串女乘客比较低啊老师的讲课-->
+                <!--</p>-->
+                <!--<p class="Blog_footer">了打给客服分级考试了买奶粉的胜利手里的吗</p >-->
+                <!--</div>  -->
+            </div> 
+            <script type="text/html" id="Blog_content_c">
+                {{each Blog_content_box_m as value index}}
+                <div class="Blog_content_div">
+                    <img src="{{value.imgPath}}">
+                    <p class=".Blog_content_p">{{value.p}}</p>
+                    <p class="Blog_footer">{{value.foot}}</p>
+                </div>
+
+                {{/each}}
+            </script>
+        </div>
+        <div id="team">
+            <div id="team_top">
+                <span id="team_top_sapn">主厨团队</span>
+                <p id="team_top_p">Team</p>
+            </div>
+            <div id="team_content">
+                <div id="team_content_main">
+                    <div id="team_content_top" class="clerafix team_content_div">
+                        <img src="img/index/主厨Tom.jpg"id="team_content_top_left" width="150" height="149">
+                        <div id="team_content_top_mid">
+                            <span>王利华 / Tom</span>
+                            <p>行政主厨</p>
+                        </div>
+                        <span id="team_content_top_finally"><a href="#">></a></span>
+                        <p id="team_content_top_right">就像他过去的十五年一直做得一样，他总是尝试再给我说一遍不能冷吃的原因，和他在一起，你永远不会吃掉冷掉的牛排，甚至半凉的牛排也是</p>
+
+                    </div>
+                    <!--<script type="text/html" id="team_content_top_c">-->
+                    <!--{{each team_m as value index}}-->
+                    <!--<img src="{{value.imgPath}}" id="team_content_top_left">-->
+                    <!--<div id="team_content_top_mid_div">-->
+                    <!--<sapn id="team_content_top_mid_sapn">{{value.span_m}}</sapn>-->
+                    <!--<p id="team_content_top_mid_p">{{value.p_m}}</p>-->
+                    <!--</div>-->
+                    <!--<span id="team_content_top_finally"><a href="#">></a></span>-->
+                    <!--<p id="team_content_top_right">{{value.title}}</p>-->
+                    <!--{{/each}}-->
+                    <!--</script>-->
+                    <div id="team_content_bottom" class="clerafix team_content_div">
+                        <img src="img/index/主厨Jack.jpg"id="team_content_bottom_left" width="150" height="149">
+                        <div id="team_content_bottom_mid">
+                            <span>赵春城 / Jack</span>
+                            <p>行政主厨</p>
+                        </div>
+                        <span id="team_content_bottom_finally"><a href="#">></a></span>
+                        <p id="team_content_bottom_right">就像他过去的十五年一直做得一样，他总是尝试再给我说一遍不能冷吃的原因，和他在一起，你永远不会吃掉冷掉的牛排，甚至半凉的牛排也是</p>
+
+                    </div>
+                    <!--<script type="text/html" id="team_content_bottom_c">-->
+                    <!--{{each team_b as value index}}-->
+                    <!--<img src="{{value.imgPath}}" id="team_content_bottom_left">-->
+                    <!--<div id="team_content_bottom_mid_div">-->
+                    <!--<sapn id="team_content_bottom_mid_span">{{value.span_m}}</sapn>-->
+                    <!--<p id="team_content_bottom_mid_p">{{value.p_m}}</p>-->
+                    <!--</div>-->
+                    <!--<span id="team_content_bottom_finally"><a href="#">></a></span>-->
+                    <!--<p id="team_content_bottom_right">{{value.title}}</p>-->
+                    <!--{{/each}}-->
+                    <!--</script>-->
+                </div>
+            </div>
+        </div>
+        <div id="commit">
+            <img src="img/index/联系我们地图.jpg" width="1536" height="500">
+            <div id="commit_intro">
+                <div id="commit_intro_left">
+                    <span id="commit_intro_left_top">联系我们</span>
+                    <div id="commit_intro_left_banner">
+                        <!--<p>电话：800-820-8820</p>-->
+                        <!--<p>网址：www.bbb.com</p>-->
+                        <!--<p>邮箱：youxiang@163.com</p>-->
+                        <!--<p>地址：西安市长安区西安邮电大学</p>-->
+                    </div>
+                    <script id="commit_intro_left_banner_content" type="text/html">
+                        {{each commit as value index}}
+                        <p>{{value.p}}</p>
+                        {{/each}}
+
+                    </script>
+                    <span id="commit_intro_left_content">营业时间</span>
+                    <div id="commit_intro_left_footer1">
+                        <!--<p>周一~周五</p><p id="commit_intro_left_color">上午:8:00&#45;&#45;12:00;下午:4:00&#45;&#45;8:00</p>-->
+                    </div>
+                    <script type="text/html" id="commit_intro_left_footer1_m">
+                        {{each time1 as value index}}
+                        <p>{{value.p}}</p>
+                        {{/each}}
+                    </script>
+                    <div id="commit_intro_left_footer2">
+                        <!--<p>周六~周天</p><p id="commit_intro_left_color1">上午:10:00&#45;&#45;12:00;下午:3:00&#45;&#45;9:00</p>-->
+                    </div>
+                    <script type="text/html" id="commit_intro_left_footer2_m">
+                        {{each time2 as value index}}
+                        <p>{{value.p}}</p>
+                        {{/each}}
+                    </script>
+                </div>
+                <div id="commit_intro_right">
+                    <div id="commit_intro_right_div"><p>使用下列表单之前需要先配置邮箱，详情可以参考教程<span id="commit_intro_right_span"><a href="#" id="commit_intro_right_span_a">《如何设置表单中的邮箱》</a></span></p></div>
+                    <div class="commit_intro_right_div"><span class="commit_intro_right_span">姓名*</span><input type="text" class="commit_intro_right_input" id="commit_intro_right_input1"></div><br>
+                    <div  class="commit_intro_right_div"><span class="commit_intro_right_span">邮箱*</span><input type="text" class="commit_intro_right_input" id="commit_intro_right_input2"></div><br>
+                    <span class="commit_intro_right_span1">联系方式*</span><input type="text" class="commit_intro_right_input" id="commit_intro_right_input3">
+                    <p>内容*</p>
+                    <textarea id="commit_intro_right_text"></textarea>
+                    <div id="commit_intro_right_bootom">发送</div>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="clerafix">
+            <div id="footer_left">
+                <p>我们期待您的光临和询问，你可以以以下方式联系我们:</p>
+                <div id="footer_left_div1">
+                    <p><img src="img/index/电话.jpg" class="footer_left_img">0512-88667546</p>
+                    <p><img src="img/index/邮箱.jpg" class="footer_left_img">youxiang@163.com</p>
+                    <p><img src="img/index/地址.jpg" class="footer_left_img">西安市长安区西安邮电大学</p>
+                </div>
+                <div id="footer_left_div">
+                    <a href="#"><img src="img/index/qq.jpg" width="22" height="25"></a>
+                    <a href="#"><img src="img/index/微信.jpg" width="22" height="25"></a>
+                    <a href="#"><img src="img/index/F.jpg" width="22" height="25"></a>
+                    <a href="#"><img src="img/index/In.jpg" width="22" height="25"></a>
+                </div>
+            </div>
+            <div id="footer_right">
+                <div><span>姓名</span><span class="footer_right_span">*</span><input type="text" class="footer_right_input"><span>电话</span><sapn class="footer_right_span">*</sapn><input type="text" class="footer_right_input"></div>
+                <p class="footer_right_p">我们有什么可以为你效劳的？</p>
+                <textarea class=" footer_right_text"></textarea>
+                <input type="button" value="提交" class="footer_right_btn">
+                <div class="footer_right_bottom">Copyright 2020-2200@西安邮电西餐ICP备案号：中0089123-3</p>
+                </div>
+
+            </div>
+            <img src="img/index/footer—头像.png" width="122" height="220">
+        </div>
+    </div><!--main-->
+</div><!--m-dix-->
 </body>
 <script src="js/lib/template-web.js"></script>
 <script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/velocity.min.js"></script>
 <script src="js/module/index.js"></script>
 </html>
