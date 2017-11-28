@@ -1,3 +1,113 @@
-#m-contactUs{
-
+#m-contactUs {
+  background-color: #212121;
+  #all{
+    width:1519px;
+    margin:0 auto;
+    background-color: #212121;
+    header {
+      position: relative;
+      padding: 14px 0 0 48px;
+      .nav{
+        width:654px;
+        position:absolute;
+        top:0;right:69px;
+        .underline{
+          display:inline-block;
+          width:109px;
+          border-bottom:1px #ffffff solid;
+          position:absolute;top:66px;left:0;
+        }
+        li{
+          height:80px;
+          width:109px;
+          text-align: center;
+          float:left;
+          line-height:80px;
+          a{
+            color:#ffffff;
+            font-size:14px;
+          }
+        }
+      }
+      p {
+        width: 155px;
+        font-size: 14px;
+        color: #ffffff;
+        margin: 13px 0 6px 0;
+        span {
+          color: #d6d6d6;
+        }
+      }
+    }
+    .section{
+      width:1519px;
+      #sec_mid{
+        width:1043px;
+        margin:-85px 0 0 239px;
+        position:relative;
+        .contact{
+          padding:57px 0 60px 112px;
+          width:522px;
+          font-size:12px;
+          background-color:#ffffff;
+          h2{
+            font-size:22px;
+            margin-bottom: 27px;
+          }
+          p{
+            margin-bottom:14px;
+          }
+         .address{
+            margin-bottom:78px;
+          }
+        }
+        .demand{
+          padding:56px 104px 109px 104px;
+          width:521px;
+          background-color:#333333;
+          font-size:14px;
+          color: #ffffff;
+          position:absolute;top:0px;left:522px;
+            span{
+              color:#75b6b0;
+            }
+          #input{
+            width:203px;
+            padding-top:26px;
+            input,textarea{
+              color: #ffffff;
+              margin-bottom:19px;
+              background-color:#333333;
+              border:none;
+              border-bottom: 1px #ffffff solid;
+              margin-left:98px;
+            }
+            textarea{
+              max-width:203px;
+              max-height:100px;
+              padding:0;
+            }
+            #submit{
+              width:70px;
+              height:28px;
+              background-color: #ffffff;
+              line-height:28px;
+              text-align:center;
+              color:#000000;
+              padding:0;margin:0
+            }
+          }
+        }
+      }
+    }
+    .footer{
+      width:1519px;
+      padding:67px 0 16px 0;
+      color: #ffffff;
+      p{
+        width:500px;
+        margin:0 auto;
+      }
+    }
+  }
 }

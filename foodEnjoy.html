@@ -4,14 +4,237 @@
     <meta charset="UTF-8">
     <title>菜品欣赏</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-
 </head>
-<body>
+<body id="foodEnjoy">
 <div id="m-foodEnjoy">
+    <div id="banner">
+        <div id="banner_ul">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="latestMenu.html">最新菜单</a></li>
+                <li><a href="foodEnjoy.html">菜品欣赏</a></li>
+                <li><a href="aboutUs.html">关于我们</a></li>
+                <li><a href="contactUs.html">联系我们</a></li>
+                <li><a href="onlineBooking.html">在线订座</a></li>
+            </ul>
+        </div>
+        <!--<div id="banner_ul">-->
+            <!--<ul>-->
+                <!--<li>-->
+                    <!--<a href="#">首页</a>-->
+                    <!--<a href="#">最新菜单</a>-->
+                    <!--<a href="#">菜品欣赏</a>-->
+                    <!--<a href="#">关于我们</a>-->
+                    <!--<a href="#">联系我们</a>-->
+                    <!--<a href="#">在线订座</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    </div>
+    <div id="connet">
+        <p class="t1">菜品欣赏</p>
+        <span class="t2">看着不吃也是一种享受</span>
+        <div class="clearfix">
+            <ul id="nav" class="clearfix">
+                <!--<li>-->
+                    <!--<a href="#">小吃</a><a href="#">意大利面</a><a class="nowfood" href="#">扒类</a><a href="#">汤</a><a href="#">沙拉</a>-->
+                <!--</li>-->
+                <li><a href="#">小吃</a></li>
+                <li><a href="#">意大利面</a></li>
+                <li><a class="nowfood" href="#">扒类</a></li>
+                <li><a href="#">汤</a></li>
+                <li><a href="#">沙拉</a></li>
+            </ul>
+        </div>
+        <div class="img">
+            <div class="snackone_get">
+            </div>
+            <script type="text/html" id="snackone_pass">
+                {{each snacksone as value index}}
+                <a href="foodDetail.html">
+                    <img src="{{value.imgPath}}" title="{{value.title}}"/>
+                    <div class="most">
+                        <h3>{{value.name}}</h3>
+                        <span>{{value.string}}</span>
+                    </div>
+                </a>
+                {{/each}}
+            </script>
+            <p class="nextl">＜</p><p class="nextr">＞</p>
+            <div class="snacktwo_get">
+            </div>
+            <script type="text/html" id="snacktwo_pass">
+                {{each snackstwo as value index}}
+                <a href="foodDetail.html">
+                    <img src="{{value.imgPath}}" title="{{value.title}}"/>
+                    <div class="most">
+                        <h3>{{value.name}}</h3>
+                        <span>{{value.string}}</span>
+                    </div>
+                </a>
+                {{/each}}
+            </script>
+            <p class="nextll">＜</p><p class="nextrr">＞</p>
+        </div>
+        <div class="img">
+            <div class="noodlesone_get">
+            </div>
+            <script type="text/html" id="noodlesone_pass">
+                {{each noodlesone as value index}}
+                <a href="foodDetail.html">
+                    <img src="{{value.imgPath}}" title="{{value.title}}"/>
+                    <div class="most">
+                        <h3>{{value.name}}</h3>
+                        <span>{{value.string}}</span>
+                    </div>
+                </a>
+                {{/each}}
+            </script>
+            <p class="nextl">＜</p><p class="nextr">＞</p>
+            <div class="noodlestwo_get">
+            </div>
+            <script type="text/html" id="noodlestwo_pass">
+                {{each noodlestwo as value index}}
+                <a href="foodDetail.html">
+                    <img src="{{value.imgPath}}" title="{{value.title}}"/>
+                    <div class="most">
+                        <h3>{{value.name}}</h3>
+                        <span>{{value.string}}</span>
+                    </div>
+                </a>
+                {{/each}}
+            </script>
+            <p class="nextll">＜</p><p class="nextrr">＞</p>
+        </div>
+        <div class="img">
+            <div class="steakone_get">
+            </div>
+            <script type="text/html" id="steakone_pass">
+                {{each steakone as value index}}
+                <a href="foodDetail.html">
+                    <img src="{{value.imgPath}}" title="{{value.title}}"/>
+                    <div class="most">
+                        <h3>{{value.name}}</h3>
+                        <span>{{value.string}}</span>
+                    </div>
+                </a>
+                {{/each}}
+            </script>
+            <p class="nextl">＜</p><p class="nextr">＞</p>
+            <div class="steaktwo_get"></div>
+            <script type="text/html" id="steaktwo_pass">
+                {{each steaktwo as value index}}
+                <a href="foodDetail.html">
+                    <img src="{{value.imgPath}}" title="{{value.title}}"/>
+                    <div class="most">
+                        <h3>{{value.name}}</h3>
+                        <span>{{value.string}}</span>
+                    </div>
+                </a>
+                {{/each}}
+            </script>
+            <p class="nextll">＜</p><p class="nextrr">＞</p>
+        </div>
+        <div class="img">
+            <div class="soupone_get">
+            </div>
+            <script type="text/html" id="soupone_pass">
+                {{each soupone as value index}}
+                <a href="foodDetail.html">
+                    <img src="{{value.imgPath}}" title="{{value.title}}"/>
+                    <div class="most">
+                        <h3>{{value.name}}</h3>
+                        <span>{{value.string}}</span>
+                    </div>
+                </a>
+                {{/each}}
+            </script>
+            <p class="nextl">＜</p><p class="nextr">＞</p>
+            <div class="souptwo_get">
+            </div>
+            <script type="text/html" id="souptwo_pass">
+                {{each souptwo as value index}}
+                <a href="foodDetail.html">
+                    <img src="{{value.imgPath}}" title="{{value.title}}"/>
+                    <div class="most">
+                        <h3>{{value.name}}</h3>
+                        <span>{{value.string}}</span>
+                    </div>
+                </a>
+                {{/each}}
+            </script>
+            <p class="nextll">＜</p><p class="nextrr">＞</p>
+        </div>
+        <div class="img">
+            <div class="saladone_get">
+            </div>
+            <script type="text/html" id="saladone_pass">
+                {{each saladone as value index}}
+                <a href="foodDetail.html">
+                    <img src="{{value.imgPath}}" title="{{value.title}}"/>
+                    <div class="most">
+                        <h3>{{value.name}}</h3>
+                        <span>{{value.string}}</span>
+                    </div>
+                </a>
+                {{/each}}
+            </script>
+            <p class="nextl">＜</p><p class="nextr">＞</p>
+            <div class="saladtwo_get">
+            </div>
+            <script type="text/html" id="saladtwo_pass">
+                {{each saladtwo as value index}}
+                <a href="foodDetail.html">
+                    <img src="{{value.imgPath}}" title="{{value.title}}"/>
+                    <div class="most">
+                        <h3>{{value.name}}</h3>
+                        <span>{{value.string}}</span>
+                    </div>
+                </a>
+                {{/each}}
+            </script>
+            <p class="nextll">＜</p><p class="nextrr">＞</p>
+        </div>
+    </div>
+    <div id="down" class="clearfix">
+        <div id="down_left">
+            <p>我们期待您的光临或垂询，您可以通过以下方式联系到我们：</p>
+            <p class="ourphone">0512-88667546</p>
+            <p class="mail">lezzatos@163.com</p>
+            <p class="location">汉东省京州市光明区佘山林萌大道18号</p>
+            <div id="call">
+                <img src="img/foodEnjoy/QQ.png">
+                <img src="img/foodEnjoy/wechat.png">
+                <img src="img/foodEnjoy/F.png">
+                <img src="img/foodEnjoy/IN.png">
+            </div>
+            <div class="contast">
+                <img src="img/foodEnjoy/qq.jpg" width="200px";height="200px">
+                <img src="img/foodEnjoy/wx.jpg" width="200px";height="200px">
+                <img src="img/foodEnjoy/wb.jpg" width="200px";height="200px">
+                <img src="img/foodEnjoy/in.jpg" width="200px";height="200px">
+            </div>
+        </div>
+        <div id="down_mid">
+            <div class="clearfix">
+            <div class="name">姓名<input class="add" type="text"></div>
+            <div class="telephone">电话<input class="add" type="text"></div>
+            </div>
+            <!--<p class="name">姓名<input class="add" type="text"><span class="telephone">电话</span><input class="add" type="text"></p>-->
 
+            <p class="please">我们有什么可以效劳</p>
+            <input id="add1" type="text">
+            <input id="give" type="button" value="提交"/>
+        </div>
+        <img class="cook" src="img/foodEnjoy/cook.png" width="120" height="219" title="厨师">
+    </div>
+    <div id="footer">
+        <p>Copyright 2015-2020 © 阿米耳炖西餐ICP备案号：中0089234123-3</p>
+    </div>
 </div>
 </body>
-<script src="js/lib/template-web.js"></script>
 <script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/template-web.js"></script>
 <script src="js/module/foodEnjoy.js"></script>
+<script src="js/lib/velocity.min.js"></script>
 </html>

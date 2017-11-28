@@ -1,3 +1,407 @@
-#m-foodEnjoy{
-
+.clearfix:before,.clearfix:after{
+  display:table;
+  content:"";
 }
+.clearfix:after{
+  clear:both;
+}
+.clearfix{
+  *zoom:1;
+}
+#foodEnjoy{
+  background-color:#212121;
+}
+#m-foodEnjoy{
+  #banner_ul,#connet,#footer p,#down{
+    width:1519px;
+    position: relative; left: 50%; margin-left: -760px;
+  }
+  #banner {
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    border-bottom: 1px #333333 solid;
+    margin-bottom: 26px;
+    z-index: 3;
+    background-color: #212121;
+    #banner_ul{
+      overflow: hidden;
+      background: url("../img/foodEnjoy/logo.png") no-repeat;
+      background-position: 48px 14px;
+      ul{
+        width:720px;
+        overflow: hidden;
+        float: right;
+        li{
+          width:120px;
+          height:80px;
+          text-align: center;
+          line-height: 80px;
+          float:left;
+          a{
+            color: #e6e6e6;
+          }
+        }
+        li:nth-child(3){
+          border-bottom: #ffffff 1px solid;
+        }
+        li:hover{
+          a{
+            color: #ffffff;
+          }
+          border-bottom:1px #ffffff solid;
+        }
+      }
+    }
+    //ul {
+    //  overflow: hidden;
+    //  background: url("../img/foodEnjoy/logo.png") no-repeat;
+    //  background-position: 48px 14px;
+    //  li {
+    //    width: 761px;
+    //    float: right;
+    //    margin-right: 31px;
+    //    a {
+    //      color: #e6e6e6;
+    //      display: inline-block;
+    //      width:120px;
+    //      font-size: 13px;
+    //      text-align: center;
+    //      height:80px;
+    //      line-height: 80px;
+    //    }
+    //    a:hover{
+    //      border-bottom:1px #ffffff solid;
+    //    }
+    //  }
+    //  li a:nth-child(3){
+    //    border-bottom:1px #ffffff solid;
+    //  }
+    //}
+  }
+  #connet,#down{
+    border-left: 1px #212121 solid;
+    border-right: 1px #212121 solid;
+  }
+  #connet{
+    padding: 107px 90px 0px 90px;
+    padding-bottom: 102px;
+    .t1{
+      padding-bottom: 9px;
+      color: #ffffff;
+      font-size: 26px;
+      margin-left: -5px;
+    }
+    .t2{
+      display:inline-block;
+      padding: 6px 3px 0px 2px;
+      font-size: 14px;
+      border-top:1px #b6b6b6 solid;
+      color: #b6b6b6;
+      margin-left: -5px;
+    }
+    ul{
+      float: right;
+      overflow: hidden;
+      margin:30px 31px 18px 0;
+      li{
+        float: left;
+        font-size: 14px;
+        height: 71px;
+        line-height: 71px;
+        width:93px;
+        a{
+          color: #b2b2b2;
+        }
+      }
+      li:hover{
+        a{
+          color: #ffffff;
+        }
+      }
+    }
+    div{
+      position: relative;
+      width:1348px;
+      overflow: hidden;
+      div{
+        overflow: hidden;
+        white-space: nowrap;
+        width: 1348px;
+        height: 259px;
+        a{
+          position: relative;
+          display: block;
+          float: left;
+          overflow: hidden;
+          width: 327px;
+          height: 219px;
+          margin-right: 10px;
+          margin-bottom: 40px;
+          img{
+            width: 327px;
+            height: 219px;
+            opacity: 1;
+          }
+          .most{
+            background: url("../img/foodEnjoy/detail.png") no-repeat center right;
+            display: none;
+            color: #ffffff;
+            padding: 15px;
+            width: 306px;
+            left: 10px;
+            height: 74px;
+            background-color: transparent;
+            border:1px #ffffff solid;
+            position: absolute;
+            top: 130px;
+            #most span{
+              display:block;
+              width: 200px;
+              overflow: hidden;
+              font-size: 14px;
+              color: #a3a39b;
+            }
+          }
+        }
+      }
+      p{
+        display: inline;
+        position: absolute;
+        z-index: 3;
+        color: #a3a39b;
+        font-size: 30px;
+      }
+      .nextl,.nextr{
+        top: 218px;
+      }
+      .nextll,.nextrr{
+        top: 485px;
+      }
+      .nextl,.nextll{
+        right: 35px;
+      }
+      .nextr,.nextrr{
+        right: 10px;
+      }
+      p:hover{
+        color: #fff;
+        cursor:default;
+      }
+    }
+    .nowfood{
+      color: #efefef;
+    }
+
+    //div{
+    //  display: none;
+    //}
+  }
+  #down{
+    overflow: hidden;
+    //height: 220px;
+    //margin-top: 80px;
+    #down_left,#down_mid{
+      float: left;
+    }
+    .cook{
+      width: 120px;
+      height: 219px;
+      display: block;
+      margin-right: 202px;
+      float: right;
+    }
+    #down_left{
+      width: 450px;
+      color: #d3d3d3;
+      font-size: 10px;
+      //padding-left: 126px;
+      // padding-top: 8px;
+      margin:8px 0px 0px 126px;
+      p{
+        height: 26px;
+        line-height: 26px;
+      }
+      #call{
+        height: 38px;
+        padding-top: 13px;
+        img{
+          margin-right: 17px;
+          cursor:pointer;
+        }
+      }
+      .ourphone{
+        background:url("../img/foodEnjoy/phone.png") no-repeat;
+        background-position: 0 50%;
+        padding-left: 17px;
+      }
+      .mail{
+        background: url("../img/foodEnjoy/mail.png") no-repeat;
+        background-position: 0 50%;
+        padding-left: 19px;
+      }
+      .location{
+        background: url("../img/foodEnjoy/location.png") no-repeat;
+        background-position: 0 50%;
+        padding-left: 12px;
+      }
+      .contast{
+        position:relative;
+        z-index:5;
+        left:180px;
+        img{
+          width:200px;
+          height:200px;
+          position: absolute;
+          top: -130px;
+          display: none;
+          //border-radius: 80%;
+        }
+      }
+    }
+    #down_mid{
+      width: 528px;
+      color: #d3d3d3;
+      font-size: 12px;
+      padding: 8px 0px 0px 112px;
+      //margin:8px 158px 0px 0px;
+      .name,.telephone{
+        height: 46px;
+        background:url("../img/foodEnjoy/13.png") no-repeat;
+        background-position: 35px 7px;
+        float: left;
+        //display: inline-block;
+      }
+      .add{
+        margin-left: 20px;
+        width: 152px;
+        background-color: #212121;
+        color: #fff;
+      }
+      .please{
+        //height: 51px;
+        background:url("../img/foodEnjoy/13.png") no-repeat;
+        background-position: 150px 13px;
+        //padding: 26px 0 51px 0;
+        padding-bottom: 10px;
+        font-size: 14px;
+        font-weight: bold;
+      }
+      #add1{
+        color: #ffffff;
+        //display: block;
+        width: 416px;
+        height: 52px;
+        line-height: 0px;
+        background-color: #212121;
+        border-bottom: 1px #bbbbbb solid;
+        background: url("../img/foodEnjoy/answer.png") no-repeat;
+        background-position:right bottom;
+        //padding: 2px;
+      }
+      #give{
+        margin-top: 23px;
+        width: 70px;
+        height: 27px;
+      }
+    }
+  }
+  #footer{
+    border-top:1px #262626 solid;
+    padding: 14px 0 27px 0;
+    p{
+      text-align: center;
+      color: #aaaaaa;
+      font-size: 11px;
+    }
+  }
+}
+
+
+//#down{
+//  height: 219px;
+//  //position: relative;
+//  margin-top: 80px;
+//  .cook{
+//    //display: inline-block;
+//    //position: absolute;
+//    //bottom: 0;
+//  }
+//  #down_left,#down_mid,.cook{
+//    float: left;
+//  }
+//  #down_left{
+//    color: #d3d3d3;
+//    font-size: 12px;
+//    margin:7px 114px 72px 126px;
+//    p{
+//      height: 26px;
+//      line-height: 26px;
+//    }
+//    #call{
+//      height: 38px;
+//      padding-top: 13px;
+//      img{
+//        display: inline-block;
+//        margin-right: 17px;
+//      }
+//    }
+//    .phone{
+//      background:url("../img/foodEnjoy/phone.png") no-repeat;
+//      background-position: 0 50%;
+//      padding-left: 17px;
+//    }
+//    .mail{
+//      background: url("../img/foodEnjoy/mail.png") no-repeat;
+//      background-position: 0 50%;
+//      padding-left: 19px;
+//    }
+//    .location{
+//      background: url("../img/foodEnjoy/location.png") no-repeat;
+//      background-position: 0 50%;
+//      padding-left: 12px;
+//    }
+//  }
+//  #down_mid{
+//    width: 416px;
+//    color: #d3d3d3;
+//    font-size: 12px;
+//    margin:8px 159px 0px 0px;
+//    .name{
+//      background:url("../img/foodEnjoy/13.png") no-repeat;
+//      background-position: 35px 7px;
+//      display: inline-block;
+//    }
+//    .add{
+//      margin-left: 20px;
+//      width: 152px;
+//      background-color: #212121;
+//      color: #fff;
+//    }
+//    .telephone{
+//      background:url("../img/foodEnjoy/13.png") no-repeat;
+//      background-position: 35px 7px;
+//      display: inline-block;
+//    }
+//    .please{
+//      background:url("../img/foodEnjoy/13.png") no-repeat;
+//      background-position: 138px 35px;
+//      padding: 26px 0 51px 0;
+//      font-size: 14px;
+//      font-weight: bold;
+//    }
+//    .give{
+//      width: 70px;
+//      height: 27px;
+//    }
+//    .add1{
+//      color: #ffffff;
+//      display: block;
+//      width: 416px;
+//      background-color: #212121;
+//      background: url("../img/foodEnjoy/answer.png") no-repeat;
+//      background-position:right bottom;
+//      margin-bottom: 23px;
+//    }
+//  }
+//}

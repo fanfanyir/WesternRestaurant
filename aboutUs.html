@@ -5,13 +5,118 @@
     <title>关于我们</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
-<body>
+<body id="bai_body">
 <div id="m-aboutUs">
+    <div id="m-aboutUs-banner">
+        <div id="m-aboutUs-banner-fixed" class="clearfix">
+            <script type="text/html" id="m-aboutUs-banner-fixed-pic">
+                {{each banner value index}}
+                <img src="{{value.imgPath}}">
+                <ul class="nav">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="latestMenu.html">最新菜单</a></li>
+                    <li><a href="foodEnjoy.html">菜品欣赏</a></li>
+                    <li><a href="aboutUs.html">关于我们</a></li>
+                    <li><a href="contactUs.html">联系我们</a></li>
+                    <li><a href="onlineBooking.html">在线订座</a></li>
+                </ul>
+                {{/each}}
+            </script>
 
+        </div>
+
+        <div class="banner_line"></div>
+    </div>
+    <div id="m-aboutUs-main">
+        <div class="con_top clearfix">
+            <script type="text/html" id="main_top_left">
+                {{each mainTopLeft value index}}
+                <div class="top_left">
+                    <img src="{{value.imgPath1}}">
+                    <p>{{value.content}}</p>
+                </div>
+                <div class="m-aboutUs-top_right">
+                    <div><img src="{{value.imgPath2}}"></div>
+                </div>
+                {{/each}}
+            </script>
+        </div>
+        <div class="con_middle">
+            <script type="text/html" id="con_middle_con">
+                {{each store value index}}
+                <h1 class="title">小店故事</h1>
+                <p>{{value.content1}}<br><br>{{value.content2}}</p>
+                <div id="time" class="clearfix">
+                    <div id="m-aboutUs-since">
+                        <div>公元<span></span>年</div>
+                        <span>SINCE</span>
+                    </div>
+                    <div id="m-aboutUs-coffee">
+                        <div>100,000+</div>
+                        <span>COFFEE</span>
+                    </div>
+                    <div id="m-aboutUs-products">
+                        <div>100+</div>
+                        <span>PRODUCTS</span>
+                    </div>
+                </div>
+                {{/each}}
+            </script>
+        </div>
+        <div id="con_bottom" class="clearfix">
+            <script type="text/html" id="m-aboutUs-bot-pic">
+                {{each data value index}}
+                <div class="{{value.class}}">
+                    <div><img src="{{value.imgPath}}"></div>
+                    <p>{{value.word}}</p>
+                </div>
+                {{/each}}
+            </script>
+        </div>
+    </div>
+    <div id="m-aboutUs-footer">
+        <div id="footer_top" class="clearfix">
+            <div id="contact">
+                <p>我们期待您的光临或垂询，您可以通过以下方式联系我们：</p>
+                <p class="phone">0512-88667546</p>
+                <p class="email">lezzatos@163.com</p>
+                <p class="address">汉东省京州市光明区佘山林荫大道18号</p>
+
+                <div class="clearfix" id="m-aboutUs-contact_pic">
+                    <a><img src="img/aboutUs/qq.png"></a>
+                    <a><img src="img/aboutUs/wechat.png"></a>
+                    <a><img src="img/aboutUs/facebook.png"></a>
+                    <a><img src="img/aboutUs/ins.png"></a>
+                    <img id="m-aboutUs-qq-code" src="img/aboutUs/qq_Code.jpg">
+                    <img id="m-aboutUs-wechat-code" src="img/aboutUs/wechat_Code.jpg">
+                    <img id="m-aboutUs-ins-code" src="img/aboutUs/ins_Code.jpg">
+                    <img id="m-aboutUs-fac-code" src="img/aboutUs/fac_Code.jpg">
+                </div>
+            </div>
+            <div id="register">
+                <div id="m-aboutUs-name">姓名<input type="text"></div>
+                <div id="m-aboutUs-phonenum">电话<input type="text"></div>
+                <div id="m-aboutUs-help">我们有什么可以效劳？<textarea></textarea></div>
+                <input type="button" value="提交" id="m-aboutUs-btn">
+            </div>
+            <div class="m-aboutUs-pic">
+                <script type="text/html" id="m-aboutUs-pic-cooker">
+                    {{each cooker value index}}
+                    <img src="{{value.imgPath}}">
+                    {{/each}}
+                </script>
+            </div>
+        </div>
+        <div id="footer_bottom">
+            <img src="img/aboutUs/footer_triangle.png" id="m-aboutUs-return_top" title="回到顶部">
+            <p id="copy">Copy right 2015-2020 © <a href="#">阿米耳炖西餐</a> ICP备案号: 中0089234123-3</p>
+        </div>
+
+    </div>
 </div>
-
 </body>
-<srcipt src="js/lib/template-web.js"></srcipt>
 <script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/velocity.min.js"></script>
 <script src="js/module/aboutUs.js"></script>
+<script src="js/lib/template-web.js"></script>
 </html>

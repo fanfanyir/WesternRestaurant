@@ -7,10 +7,87 @@
 </head>
 <body>
 <div id="m-foodDetail">
-
+    <script type="text/html" id="bannerListTmp">
+    </script>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="corver"></div>
+    <div id="all">
+        <header>
+            <img src="img/foodDetail/logo.png">
+            <ul class="nav">
+                <div class="underline"></div>
+                <li><a href="link.html">首页</a></li>
+                <li><a href="latestMenu.html">最新菜单</a></li>
+                <li><a href="foodEnjoy.html">菜品欣赏</a></li>
+                <li><a href="aboutUs.html">关于我们</a></li>
+                <li><a href="contactUs.html">联系我们</a></li>
+                <li><a href="onlineBooking.html">在线订座</a></li>
+            </ul>
+            <p>扒类<span>/精选澳洲谷饲肉眼</span></p>
+        </header>
+        <div class="section clearfix">
+            <div class="sec_left">
+                    <div id="carousel">
+                        <script type="text/html" id="bannerList">
+                            {{each data as value index}}
+                                <img src="{{value.imgPath}}" title="{{value.title}}"/>
+                            {{/each}}
+                        </script>
+                    </div>
+            </div>
+            <div class="sec_right">
+                <script type="text/html" id="foodComment">
+                    {{each food_show as value index}}
+                        <p>{{value.p_value1}}</p>
+                        <p>{{value.p_value2}}</p>
+                        <p>{{value.p_value3}}</p>
+                        <div class="food_show">
+                            <img src="{{value.imgPath}}">
+                            <p>{{value.name}}</p>
+                            <span class="comment">{{value.comment}}</span>
+                        </div>
+                    {{/each}}
+                </script>
+            </div>
+            <p id="introduce">天赐美味，沁绿珍贵。</p>
+            <p id="in"></p><input type="button" value="+">
+        </div>
+        <div class="footer">
+            <div id="information">
+                <p>我们期待您的光临或垂询</p>
+                <p>0512-88667546</p>
+                <p>lezzatos@163.com</p>
+                <p>汉东省京州市光明区余山林荫大道18号</p>
+                <div class="way">
+                    <img src="img/foodDetail/qq.png" alt="">
+                    <img src="img/foodDetail/wechat.png" alt="">
+                    <img src="img/foodDetail/facebook.png" alt="">
+                    <img src="img/foodDetail/ins.png" alt="">
+                </div>
+                <div class="contast_code">
+                    <img src="img/foodDetail/qq_code.png" width="200px";height="200px">
+                    <img src="img/foodDetail/wechat_code.png" width="200px";height="200px">
+                    <img src="img/foodDetail/ins_code.png" width="200px";height="200px">
+                    <img src="img/foodDetail/wechat_code.png" width="200px";height="200px">
+                </div>
+            </div>
+            <div id="input">
+                姓名<span>*</span><input type="text" value="">
+                电话<span>*</span><input type="text" value="">
+                <p>我们有什么可以效劳?</p><textarea></textarea>
+                <input type="submit" value="提交" id="submit">
+            </div>
+            <p class="footer_code">Copyright 2015-2020&nbsp;&copy;&nbsp;阿米尔炖西餐ICP备案号：中0089234123-3</p>
+            <img src="img/foodDetail/footer_scroll.png" title="回到顶部" id="footer_scroll">
+        </div>
+    </div>
 </div>
 </body>
 <script src="js/lib/template-web.js"></script>
 <script src="js/lib/jquery.min.js"></script>
 <script src="js/module/foodDetail.js"></script>
+<script src="js/lib/velocity.min.js"></script>
 </html>
